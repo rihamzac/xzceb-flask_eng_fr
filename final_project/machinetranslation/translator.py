@@ -30,7 +30,7 @@ def french_to_english(french_text):
     'https://api.au-syd.language-translator.watson.cloud.ibm.com/instances/afe709de-df9d-4f26-ad2c-9765d0b8e1ca'
     )
     translation = translator.translate(
-        text= 'bonjour',
+        text= french_text,
         source='fr',
         target='en'
     ).get_result()
